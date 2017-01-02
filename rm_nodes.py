@@ -45,9 +45,9 @@ with open(nodes_todel_file) as fd:
         lines = fd.readlines()
         for ln in lines:
                 node_name = ln.rstrip('\n')
-                if node_name in have_nodes:
-                        todel_nodes.append(node_name)
-                        print "Delete node: " + node_name
+                #if node_name in have_nodes:
+		todel_nodes.append(node_name)
+		print "Delete node: " + node_name
 
 print "Found %d node(s) to be deleted" % (len(todel_nodes))
 
